@@ -5,8 +5,8 @@ A vibrant and interactive digital journal application that allows users to log t
 ---
 
 ## Repository & Live Website
-- **GitHub Repository**: [Digital Journal](https://github.com/your-username/digital-journal)
-- **Live Website**: [Digital Journal Live](https://your-live-site-link.com)
+- **GitHub Repository**: [Digital Journal](https://github.com/Rajeshwar-03/DigitalJournalApplication)
+- **Live Website**: [Digital Journal Live](https://graceful-druid-81268d.netlify.app/)
 
 ---
 
