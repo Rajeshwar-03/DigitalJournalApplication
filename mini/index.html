@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Journal</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Page 1: Entry Page -->
+  <div class="container" id="entryPage">
+    <h1>Digital Journal</h1>
+    <form id="journalForm">
+      <label for="mood">Today's Mood:</label>
+      <select id="mood" name="mood" required>
+        <option value="😊">😊 Happy</option>
+        <option value="😐">😐 Neutral</option>
+        <option value="😢">😢 Sad</option>
+        <option value="😡">😡 Angry</option>
+        <option value="😴">😴 Tired</option>
+      </select>
+
+      <label for="notes">Daily Notes:</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Write about your day..." required></textarea>
+
+      <button type="submit">Add Entry</button>
+    </form>
+  </div>
+
+  <!-- Page 2: View Page -->
+  <div class="container hidden" id="viewPage">
+    <h1>Your Journal Entries</h1>
+    <button id="backButton">Back to Entry</button>
+    <div id="entries">
+      <h2>Journal Entries</h2>
+      <ul id="entryList"></ul>
+    </div>
+
+    <div id="moodChartContainer">
+      <h2>Mood Over Time</h2>
+      <canvas id="moodChart"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

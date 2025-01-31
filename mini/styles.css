@@ -1,0 +1,140 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Page 1: Entry Page */
+  #entryPage {
+    background: linear-gradient(135deg, #e7b6b8, #b1eca6);
+    animation: slideIn 0.5s ease;
+  }
+  
+  /* Page 2: View Page */
+  #viewPage {
+    background: linear-gradient(135deg, #adc4e9, #a0ebd0);
+    animation: slideIn 0.5s ease;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .hidden {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  h1, h2 {
+    color: #444;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #entries {
+    margin-top: 20px;
+  }
+  
+  #entryList {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #entryList li {
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    animation: fadeIn 0.5s ease;
+  }
+  
+  #moodChartContainer {
+    margin-top: 20px;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Mood-Based Background Colors */
+  body[data-mood="😊"] {
+    background-color: #d6e09f; /* Light Blue */
+  }
+  
+  body[data-mood="😐"] {
+    background-color: #f4f467; /* Light Gray */
+  }
+  
+  body[data-mood="😢"] {
+    background-color: #b4e2ed; /* Light Red */
+  }
+  
+  body[data-mood="😡"] {
+    background-color: #eb626f; /* Light Pink */
+  }
+  
+  body[data-mood="😴"] {
+    background-color: #82cefa; /* Light Cyan */
+  }
