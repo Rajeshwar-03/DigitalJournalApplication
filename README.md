@@ -1,4 +1,4 @@
-# DigitalJournalApplication
+# Digital Journal Application
 
 A vibrant and interactive digital journal application that allows users to log their mood, add daily notes, and visualize mood patterns over time. Built with HTML, CSS, and JavaScript, and enhanced with Chart.js for mood visualization.
 
